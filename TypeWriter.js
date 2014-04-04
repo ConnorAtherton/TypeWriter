@@ -1,3 +1,12 @@
+/*
+ * TypeWriter.js
+ *
+ * Copyright 2014, Connor Atherton - http://connoratherton.com/
+ * Released under the MIT Licence
+ * http://opensource.org/licenses/MIT
+ *
+ * Github:  http://github.com/ConnorAtherton/TypeWriter
+ */
 (function(window, document) {
   'use strict';
 
@@ -11,7 +20,7 @@
       words: opts.words || false,
       interval: opts.interval || 'human',
       lowerBound: 50,
-      upperBound: 200
+      upperBound: 170
     },
     randomIntFromInterval = function(min, max) {
       return Math.floor(Math.random() * (max - min + 1) + min);
