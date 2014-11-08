@@ -40,8 +40,7 @@ var tw = new TypeWriter('.example-3-output', {
 tw.type();
 ```
 
-### Letter by letter, random natural human interval with bounds specified
-### and a callback on completion.
+### Letter by letter, random natural human interval with bounds specified and a callback on completion.
 
 ```
 var tw = new TypeWriter('.example-4-output', {
@@ -51,7 +50,7 @@ var tw = new TypeWriter('.example-4-output', {
     upperBound: 130
 });
 
-tw.type(function () {
+tw.type(function() {
     console.log('Finished typing now');
 });
 ```
