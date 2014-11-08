@@ -6,7 +6,7 @@ few different configuration options that are all documented below.
 
 See some examples [here](http://connoratherton/typewriter).
 
-# Letter by letter, fixed interval.
+### Letter by letter, fixed interval.
 
 ```
 var tw = new TypeWriter('.example-1-output', {
@@ -17,7 +17,7 @@ var tw = new TypeWriter('.example-1-output', {
 tw.type();
 ```
 
-# Letter by letter, random natural human interval.
+### Letter by letter, random natural human interval.
 
 ```
 var tw = new TypeWriter('.example-2-output', {
@@ -28,7 +28,7 @@ var tw = new TypeWriter('.example-2-output', {
 tw.type();
 ```
 
-# Word by work, fixed interval
+### Word by work, fixed interval
 
 ```
 var tw = new TypeWriter('.example-3-output', {
@@ -40,8 +40,8 @@ var tw = new TypeWriter('.example-3-output', {
 tw.type();
 ```
 
-# Letter by letter, random natural human interval with bounds specified
-# and a callback on completion.
+### Letter by letter, random natural human interval with bounds specified
+### and a callback on completion.
 
 ```
 var tw = new TypeWriter('.example-4-output', {
@@ -56,7 +56,7 @@ tw.type(function () {
 });
 ```
 
-# All options
+### All options
 
 ```
 var tw = new TypeWriter('selector', {
