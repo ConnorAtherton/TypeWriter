@@ -1,6 +1,6 @@
 {
-  "name": "Typewriter",
-  "version": "0.0.1",
+  "name": "typewriter.js",
+  "version": "0.0.2",
   "description": "An easy way to animate simple svg elements.",
   "main": "/src/TypeWriter.js",
   "scripts": {
