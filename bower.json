@@ -1,0 +1,28 @@
+{
+  "name": "typewriter.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ConnorAtherton/TypeWriter",
+  "authors": [
+    "Connor Atherton <c.liam.atherton@gmail.com>"
+  ],
+  "description": "Simulate typing on a page.",
+  "main": "src/typewriter.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "typewriter",
+    "typing",
+    "visual"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
