@@ -1,18 +1,30 @@
 /*
- * TypeWriter.js
+ * typewriter.js
  *
  * Copyright 2014, Connor Atherton - http://connoratherton.com/
  * Released under the MIT Licence
  * http://opensource.org/licenses/MIT
  *
- * Github:  http://github.com/ConnorAtherton/TypeWriter
+ * Github:  http://github.com/ConnorAtherton/typewriter
  */
-;(function(window, document) {
-   'use strict';
+
+;(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(factory);
+  } else if (typeof exports === 'object') {
+    // CommonJS
+    module.exports = factory();
+  } else {
+    // Browser globals
+    root.Typewriter = factory();
+  }
+}(this, function factory(exports) {
+  'use strict';
 
    var TypeWriter = TypeWriter || function (selector, opts) {
-     if(!selector) throw new Error('A selector must be specified');
-     if(!opts.text) throw new Error('TypeWriter needs text to type');
+     if (!selector) throw new Error('A selector must be specified');
+     if (!opts.text) throw new Error('TypeWriter needs text to type');
 
      var options = {
        element: document.querySelector(selector),
@@ -32,8 +44,7 @@
      },
 
      getIntervalSpeed = function() {
-       if(isNumber(options.interval))
-         return options.interval;
+       if (isNumber(options.interval)) return options.interval;
 
        return randomIntFromInterval(options.lowerBound, options.upperBound);
      },
@@ -43,7 +54,7 @@
            currentPosition = 0;
 
        var interval = window.setInterval(function() {
-         if(currentPosition === numberOfLetters){
+         if (currentPosition === numberOfLetters) {
            window.clearInterval(interval);
 
            cb && cb.call(window);
@@ -62,8 +73,7 @@
      },
 
      repeat = function(numberOfLetters, currentPosition, cb) {
-       if(numberOfLetters === 0)
-         return cb && cb.call(window);
+       if (numberOfLetters === 0) return cb && cb.call(window);
 
        var interval = getIntervalSpeed.call(),
            timer;
@@ -82,7 +92,7 @@
            currentPosition = 0;
 
        var interval = window.setInterval(function() {
-         if(currentPosition === numberOfWords){
+         if (currentPosition === numberOfWords) {
            window.clearInterval(interval);
 
            cb && cb.call(window);
@@ -101,6 +111,6 @@
 
    };
 
-   window.TypeWriter = TypeWriter;
+   return TypeWriter;
 
- }).call(this, window, document);
+}));

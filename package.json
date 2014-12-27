@@ -1,17 +1,17 @@
 {
   "name": "typewriter.js",
-  "version": "0.0.2",
-  "description": "An easy way to animate simple svg elements.",
-  "main": "/src/TypeWriter.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.4",
+  "description": "Simulate typing on a page.",
+  "main": "/src/typewriter.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/ConnorAtherton/typewriter.git"
   },
   "keywords": [
-    "text"
+    "text",
+    "browser",
+    "typing"
   ],
   "author": "Connor Atherton",
   "license": "MIT",
