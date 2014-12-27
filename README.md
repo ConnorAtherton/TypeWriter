@@ -4,7 +4,7 @@ Typewriter
 Typewriter provides an easy way to print out text on the web. It comes with a
 few different configuration options that are all documented below.
 
-See some examples [here](http://connoratherton/typewriter).
+See some examples [here](http://connoratherton.com/typewriter).
 
 ### Letter by letter, fixed interval.
 
