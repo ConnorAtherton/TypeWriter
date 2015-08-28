@@ -1,6 +1,6 @@
 {
   "name": "typewriter.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simulate typing on a page.",
   "main": "./src/typewriter.js",
   "scripts": {},
