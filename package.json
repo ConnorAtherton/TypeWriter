@@ -1,8 +1,8 @@
 {
   "name": "typewriter.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simulate typing on a page.",
-  "main": "/src/typewriter.js",
+  "main": "./src/typewriter.js",
   "scripts": {},
   "repository": {
     "type": "git",
