@@ -22,12 +22,12 @@
 }(this, function factory(exports) {
   'use strict';
 
-   var TypeWriter = TypeWriter || function (selector, opts) {
-     if (!selector) throw new Error('A selector must be specified');
+   var TypeWriter = TypeWriter || function (element, opts) {
+     if (!element) throw new Error('A selector or element must be specified');
      if (!opts.text) throw new Error('TypeWriter needs text to type');
 
      var options = {
-       element: document.querySelector(selector),
+       element: !(element instanceof Node) ? document.querySelector(selector) : element,
        text: opts.text,
        words: opts.words || false,
        interval: opts.interval || 'human',
